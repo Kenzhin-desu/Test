@@ -13,16 +13,6 @@
       border-radius: 4px;
       font-size: 20px;
     }
-    input {
-        border: none;
-        padding: 20px;
-        cursor: pointer;
-        font-weight: bold;
-        background-color: #cfb997;
-        color: white;
-        border-radius: 4px;
-        font-size: 20px;
-    }
     #image1 {
       display: none;
     }
@@ -54,9 +44,13 @@
       document.getElementById("btnID3")
       .style.display = "none";
   }
-  function back() {
-      history.go
+  const reloadtButton = document.querySelector("#reload");
+// Reload everything:
+  function reload() {
+    reload = location.reload();
   }
+// Event listeners for reload
+  reloadButton.addEventListener("click", reload, false);
   </script>
   
   </head>
@@ -88,6 +82,9 @@
       id="btnID3" onclick="shown()">
       Show Third Image 
     </button>
-    <input type="reset">
+<!-- reload button-->
+    <button onClick="window.location.reload()">
+      Refresh Page
+    </button>
     </body>
     </html>
