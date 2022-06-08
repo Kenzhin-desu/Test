@@ -1,4 +1,4 @@
-<!--
+
 <html>
 <style>
     body { font-weight: bold;
@@ -31,27 +31,26 @@
       document.getElementById("image1")
       .style.display = "block";
       document.getElementById("btnID1")
-      .style.display = "none";
+      
   }
   function shows() {
       document.getElementById("image2")
       .style.display = "block";
       document.getElementById("btnID2")
-      .style.display = "none";
+      
   }
   function shown() {
       document.getElementById("image3")
       .style.display = "block";
       document.getElementById("btnID3")
-      .style.display = "none";
+      
   }
-  const reloadtButton = document.querySelector("#reload");
-// Reload everything:
-  function reload() {
-    reload = location.reload();
+  function close() {
+      let show
+      document.getElementById("close-el")
+
   }
-// Event listeners for reload
-  reloadButton.addEventListener("click", reload, false);
+  
   </script>
   
   </head>
@@ -83,10 +82,9 @@
       id="btnID3" onclick="shown()">
       Show Third Image 
     </button>
- reload button
-    <button onClick="window.location.reload()">
-      Refresh Page
+    <button id="close-el" onclick="close()"> 
+      close pictures 
     </button>
+    
     </body>
     </html>
-  -->

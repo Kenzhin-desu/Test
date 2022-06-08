@@ -59,30 +59,25 @@ incrementLap() //the output should be 3
 console.log(lapsCompleted) */
 
 // DOM or Document object Model is how you use JavaScript to modify a website
+    let saveEl = document.getElementById("save-el")
+    let countEl = document.getElementById("count-el")
+    let count = 0
 
-let countEl = document.getElementById("count-el")
-
-console.log(countEl)
-
-let count = 0
+    console.log(saveEl)
 
 function increment()   {          
-    count = count + 1
-        countEl.innerText = count // everytime you click the increment button in the app it adds one to the previous number
+    count = count + 1 // or count += 1
+    countEl.textContent = count // everytime you click the increment button in the app it adds one to the previous number
+
     }
 
-let saved = document.getElementById("saved")
+    
 
-console.log(saved)
 
 function save() {
-    console.log(count)
+    let count1 = count + " - "
+    saveEl.textContent += count1 // saveEl.innerText += count1
+    countEl.textContent = 0
+    count = 0
 }
-
-function saved() {
-    
-}
-
-
-
 
