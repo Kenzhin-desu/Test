@@ -1,7 +1,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
+  <style>
 body {
     padding: 20px;
     text-align: center;
@@ -26,6 +27,7 @@ body {
 .button5 {border-radius: 50%;}
 </style>
 </head>
+
 <body>
 
 <h2>Rounded Buttons</h2>
@@ -39,3 +41,84 @@ body {
 
 </body>
 </html>
+
+
+
+<!-- click button and show image-->
+<!--
+<style>
+  body { font-weight: bold;
+    text-align: center;
+  }
+  button {
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #cfb997;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+  #image1 {
+    display: none;
+  }
+  #image2 {
+    display: none;
+  }
+  #image3 {
+    display: none;
+  }
+  
+</style>
+<script>
+  // click button/ show pictures
+function show() {
+    document.getElementById("image1")
+    .style.display = "block";
+    document.getElementById("btnID1")
+    .style.display = "none";
+}
+function shows() {
+    document.getElementById("image2")
+    .style.display = "block";
+    document.getElementById("btnID2")
+    .style.display = "none";
+}
+function shown() {
+    document.getElementById("image3")
+    .style.display = "block";
+    document.getElementById("btnID3")
+    .style.display = "none";
+}
+</script>
+
+</head>
+
+<body>
+  <img id="image1" 
+    src="moon.jpg" 
+    alt="moon">
+
+    <img id="image2" 
+    src="tunnle.jpg" 
+    alt="tunnle">
+
+    <img id="image3" 
+    src="hike.jpg" 
+    alt="hike">
+
+  <button type="button1" 
+    id="btnID1" onclick="show()">
+    Show first Image 
+  </button>
+
+  <button type="button2" 
+    id="btnID2" onclick="shows()">
+    Show Second Image 
+  </button>
+
+  <button type="button3" 
+    id="btnID3" onclick="shown()">
+    Show Third Image 
+  </button> -->

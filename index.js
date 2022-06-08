@@ -43,10 +43,37 @@ function theMeaningOfLife() {
 }
 theMeaningOfLife()
 */
-
+/*
+//create a function that increments the lapsCompeted variable by one
 let lapsCompleted = 0
 
-function lapsCompleted() 
+function incrementLap() {
+    lapsCompleted = lapsCompleted + 1
+    
+
+}
+incrementLap()
+incrementLap()
+incrementLap() //the output should be 3
+
+console.log(lapsCompleted) */
+
+// DOM or Document object Model is how you use JavaScript to modify a website
+/*
+let countEl = document.getElementById("count-el")
+
+console.log(countEl)
+
+let count = 0
+
+function increment()   {
+    console.log (" how manytimes clicked")
+                        }
+    count = count + 1
+        countEl.innerText = count // everytime you click the increment button in the app it adds one to the previous number
+*/
 
 
-console.log(lapsCompleted)
+
+
+
