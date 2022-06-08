@@ -57,7 +57,7 @@ incrementLap()
 incrementLap() //the output should be 3
 
 console.log(lapsCompleted) */
-
+/*
 // DOM or Document object Model is how you use JavaScript to modify a website
     let saveEl = document.getElementById("save-el")
     let countEl = document.getElementById("count-el")
@@ -71,13 +71,32 @@ function increment()   {
 
     }
 
-    
-
 
 function save() {
     let count1 = count + " - "
     saveEl.textContent += count1 // saveEl.innerText += count1
     countEl.textContent = 0
     count = 0
+} */
+
+
+
+let myPoints = 3
+
+function add3Points() {
+
+    myPoints += 3
 }
 
+
+function remove1Points() {
+
+    myPoints -= 1
+}
+add3Points()
+add3Points()
+add3Points()
+remove1Points()
+remove1Points()
+
+console.log(myPoints)
