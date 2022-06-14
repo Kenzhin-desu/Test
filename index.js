@@ -80,23 +80,89 @@ function save() {
 } */
 
 
+/* // purchase something wemt wrong
+let errorEl = document.getElementById("error-el")
 
-let myPoints = 3
+console.log(errorEl)
 
-function add3Points() {
+function purchase() {
 
-    myPoints += 3
+    let errorMessage = "something went wrong"
+
+    errorEl.textContent = errorMessage
+}
+*/
+/*    // calculator
+    let num1 = 8
+    let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+let sumEl = document.getElementById("sum-el")
+
+
+function add() {
+    let add1 = num1 + num2 + " - "
+    sumEl.textContent += add1
+
 }
 
-
-function remove1Points() {
-
-    myPoints -= 1
+function subtract() {
+    let sub1 = num1 - num2 + " - "
+    sumEl.textContent += sub1
 }
-add3Points()
-add3Points()
-add3Points()
-remove1Points()
-remove1Points()
 
-console.log(myPoints)
+function divide() {
+    let div1 = num1 * num2 + " - "
+    sumEl.textContent += div1
+}
+
+function multiply() {
+    let multi1 = num1 / num2 + " - "
+    sumEl.textContent += multi1
+}
+*/ /*
+let age = 50
+
+if(age < 100) {
+    console.log("You are not elegible")
+} else if (age === 100) {
+    console.log("here is your birthday card from  the king!")
+} else {
+    console.log("You've already gotten one")
+}
+*/
+//"if" practic
+let firstCard = 5
+let secondCard = 2
+let sum = firstCard +secondCard
+let hasBlackJack = false
+let isAlive = true //out of the game
+let message = ""
+let messageEl = document.getElementById("message-el")
+//let sumEl = document.getElementById("sum-el")
+// let sumEl = document.getElementById(".sum-el") // class tag
+let sumEl = document.querySelector("#sum-el") //id tag
+let cardEl = document.querySelector("#card-el")
+
+
+function startGame() {
+    cardEl.textContent += firstCard + " " + secondCard;
+    sumEl.textContent += sum
+
+    if (sum < 21) {
+        message ="do you want to draw another card? "
+    } else if (sum === 21) {
+        message = "Naol! you've got BlackJack! "
+        hasBlackJack = true
+    } else if (sum > 21) {
+        message = "I'm sorry, you've lost your money."
+        isAlive = false
+    }
+    messageEl.textContent = message
+    
+}
+
+function  newcard() {
+    console.log("Drawing a new card")
+}
+
