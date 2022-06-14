@@ -132,37 +132,48 @@ if(age < 100) {
 }
 */
 //"if" practic
-let firstCard = 5
-let secondCard = 2
-let sum = firstCard +secondCard
+let firstCard = 4
+let secondCard = 10
+let cards = [firstCard, secondCard] //array - ordered list of item
+let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true //out of the game
 let message = ""
 let messageEl = document.getElementById("message-el")
 //let sumEl = document.getElementById("sum-el")
 // let sumEl = document.getElementById(".sum-el") // class tag
-let sumEl = document.querySelector("#sum-el") //id tag
-let cardEl = document.querySelector("#card-el")
-
+let sumEl = document.getElementById("sum-el")
+let cardEl = document.getElementById("card-el")
 
 function startGame() {
-    cardEl.textContent += firstCard + " " + secondCard;
-    sumEl.textContent += sum
+    renderGame()
+}
 
-    if (sum < 21) {
+
+function renderGame() {
+    cardEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+    sumEl.textContent = "Sum: " + sum
+
+    if (sum <= 20) {
         message ="do you want to draw another card? "
     } else if (sum === 21) {
-        message = "Naol! you've got BlackJack! "
+        message = "you've got BlackJack! "
         hasBlackJack = true
-    } else if (sum > 21) {
-        message = "I'm sorry, you've lost your money."
+    } else {
+        message = "You're out of the game!"
         isAlive = false
     }
     messageEl.textContent = message
     
 }
 
-function  newcard() {
+function  newCard() {
     console.log("Drawing a new card")
+
+    let card = 6
+
+    sum += card
+
+    renderGame()
 }
 
