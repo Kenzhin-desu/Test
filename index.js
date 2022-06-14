@@ -129,11 +129,11 @@ if(age < 100) {
     console.log("here is your birthday card from  the king!")
 } else {
     console.log("You've already gotten one")
-}
-*/
+} */
+    // --------------------------------
 //"if" practic
-let firstCard = 4
-let secondCard = 10
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard] //array - ordered list of item
 let sum = firstCard + secondCard
 let hasBlackJack = false
@@ -145,13 +145,20 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 
+function getRandomCard() {
+    return 5
+}
+
 function startGame() {
     renderGame()
 }
 
 
 function renderGame() {
-    cardEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+    cardEl.textContent = "Cards: "
+    for (let i = 0; i < cards.length; i ++) {
+        cardEl.textContent += cards[i] + " "
+    }
     sumEl.textContent = "Sum: " + sum
 
     if (sum <= 20) {
@@ -170,10 +177,12 @@ function renderGame() {
 function  newCard() {
     console.log("Drawing a new card")
 
-    let card = 6
-
+    let card = getRandomCard()
     sum += card
 
+    cards.push(card)
+    console.log(cards)
     renderGame()
 }
+
 
