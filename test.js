@@ -1,5 +1,10 @@
-//let randomNumber = Math.random() * 11.1
+let airbnbListing = {
+    castleName: "The Great castle", //string
+    Locations: ["LA", "Chicago"], // array
+    itsAvalable: true, // boolean
+    Prices: 155,    // number
+    rooms: 10,
+}
 
-//console.log(randomNumber)
-let flooredNumber = Math.floor( Math.random() * 11 ) + 1
-console.log(flooredNumber)
+console.log(airbnbListing.castleName)
+console.log(airbnbListing.Locations)
