@@ -8,11 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <?php
-        echo("Hello World");
-    
-    ?>
+    <form action="index.php" method="post">
 
+        <input type="password" name="password">
+        <input type="submit" >
+    </form>
+
+    <?php 
+    echo s;
+    
+     ?>
 </body>
 </html>
