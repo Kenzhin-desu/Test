@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="index.php" method="post">
 
-        <input type="password" name="password">
-        <input type="submit" >
-    </form>
+<?php 
+    include_once 'header.php';
+?>
 
-    <?php 
-    echo s;
-    
-     ?>
+<section>
+    <h1>A title</h1>
+    <p>Some content</p>
+</section>
+
+<footer>
+    <p>A footer</p>
+</footer>
 </body>
 </html>
